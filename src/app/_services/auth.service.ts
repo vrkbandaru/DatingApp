@@ -27,11 +27,12 @@ login(model: any) {
     )
   );
 }
-register(model: any){
+
+register(model: any) {
   return this.http.post(this.baseUrl + 'register', model);
 }
 
-loggedIn(){
+loggedIn() {
   const token = localStorage.getItem('token');
   return !this.jwtHelper.isTokenExpired(token);
 }
