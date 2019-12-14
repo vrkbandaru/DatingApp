@@ -38,7 +38,7 @@ export class ListsComponent implements OnInit {
     });
   }
 
-  pageChanged (event: any): void {
+  pageChanged(event: any): void {
     this.pagination.currentPage = event.page;
     this.loadUsers();
   }
